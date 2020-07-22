@@ -1,10 +1,10 @@
 # swiftformat tests
 
-# Getting started 
- 
-* Open `test.swift` and do something to it that the program `swiftformat` would format for you. One example is to add a few newline characters to the end of the file. 
+# Getting started
 
-* Test! `swiftformat` will be executed against `test.swift`. 
+* Open `test.swift` and do something to it that the program `swiftformat` would format for you. One example is to add a few newline characters to the end of the file.
+
+* Test! `swiftformat` will be executed against `test.swift`.
 
 # What to test and look for
 
@@ -19,5 +19,5 @@ SwiftFormat completed in 0.03s.
 ```
 
 This implies a few things:
-1. "Reading config file..." means the `.swiftformat` config file works. 
-2. "1/1 files formatted." means that `test.swift` was formatted. 
+1. "Reading config file..." means the `.swiftformat` config file works.
+2. "1/1 files formatted." means that `test.swift` was formatted.
