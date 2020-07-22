@@ -1,11 +1,11 @@
-![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/levibostian/pre-commit-hooks?include_prereleases)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/levibostian/pre-commit-hooks)
 
 # pre-commit-hooks
 
 Custom hooks for [pre-commit](https://pre-commit.com/).
 
 | Hook id       | Description                                                                             |
------------------------------------------------------------------------------------------------------------
+| ------------- | --------------------------------------------------------------------------------------- |
 | `swiftformat` | Format your Swift code with [SwiftFormat](https://github.com/nicklockwood/SwiftFormat). |
 
 *Note: The scripts in these hooks are written in Bash. It is also assumed that you are running `pre-commit` on macOS. In the future, these commands could be [re-written in Go lang](https://github.com/lietu/go-pre-commit) or something like it but at this time, Bash works quick and easy for us.*
