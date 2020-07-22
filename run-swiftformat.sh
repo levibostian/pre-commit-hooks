@@ -5,6 +5,8 @@ if ! [ -x "$(command -v swiftformat)" ]; then
     exit 1
 fi
 
+# Thanks for the inspriation, https://github.com/Bahjat/pre-commit-golang/blob/master/run-go-lint.sh
+
 PASS=true
 for FILE in "$@"
 do
