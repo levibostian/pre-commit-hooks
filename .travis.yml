@@ -1,0 +1,27 @@
+language: node_js
+node_js:
+  - lts/*
+
+cache:
+  npm: true
+
+env:
+  global:
+    - FOO="bar"
+    # Below are secret environment variables you need to set.
+    # Note: You need to escape all of the special characters. Add a `\` character before each.
+    #
+    # GITHUB_TOKEN= access token for bot. Bot must be added to repo with push access.
+
+jobs:
+  include:
+  - stage: deploy
+    script:
+      - set -e
+      # Use nvm to install and use the Node LTS version (nvm is installed on all Travis images)
+      - npm i @semantic-release/git @semantic-release/github @semantic-release/changelog
+      - npx semantic-release
+
+stages:
+  - name: deploy
+    if: type IN (push) AND branch IN (master, beta)
