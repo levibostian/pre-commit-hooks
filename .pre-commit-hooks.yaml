@@ -1,0 +1,6 @@
+-   id: swiftformat
+    name: 'swiftformat'
+    entry: run-swiftformat.sh
+    files: '\.swift$'
+    language: 'script'
+    description: "Runs `swiftformat`, requires https://github.com/nicklockwood/SwiftFormat#how-do-i-install-it"
