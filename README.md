@@ -4,6 +4,8 @@
 
 Custom hooks for [pre-commit](https://pre-commit.com/).
 
+*Note: This repo was created to create 1 script for `swiftformat`. But, [after realizing that the hook was already made before me](https://github.com/pre-commit/pre-commit.com/pull/369#issuecomment-663145738), this repo has no purpose. I am not deleting it, however, because if I need to create more hooks in the future, the repo is all setup for it.*
+
 | Hook id       | Description                                                                             |
 | ------------- | --------------------------------------------------------------------------------------- |
 | `swiftformat` | Format your Swift code with [SwiftFormat](https://github.com/nicklockwood/SwiftFormat). |
