@@ -1,0 +1,23 @@
+name: Deployment
+on:
+  push:
+    branches:
+      - master
+      - beta
+
+jobs:
+  deploy:
+    name: Deploy changes
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup node
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: 12
+      - name: Install dependencies
+        run: npm i @semantic-release/git @semantic-release/github @semantic-release/changelog
+      - name: Deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.REPO_PUSH_TOKEN }} # personal access token with push access to the repo
+        run: npx semantic-release
