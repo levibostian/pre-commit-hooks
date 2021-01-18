@@ -1,11 +1,13 @@
-![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/levibostian/pre-commit-hooks?include_prereleases)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/levibostian/pre-commit-hooks)
 
 # pre-commit-hooks
 
 Custom hooks for [pre-commit](https://pre-commit.com/).
 
+*Note: This repo was created to create 1 script for `swiftformat`. But, [after realizing that the hook was already made before me](https://github.com/pre-commit/pre-commit.com/pull/369#issuecomment-663145738), this repo has no purpose. I am not deleting it, however, because if I need to create more hooks in the future, the repo is all setup for it.*
+
 | Hook id       | Description                                                                             |
------------------------------------------------------------------------------------------------------------
+| ------------- | --------------------------------------------------------------------------------------- |
 | `swiftformat` | Format your Swift code with [SwiftFormat](https://github.com/nicklockwood/SwiftFormat). |
 
 *Note: The scripts in these hooks are written in Bash. It is also assumed that you are running `pre-commit` on macOS. In the future, these commands could be [re-written in Go lang](https://github.com/lietu/go-pre-commit) or something like it but at this time, Bash works quick and easy for us.*
